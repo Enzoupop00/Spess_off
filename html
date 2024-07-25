@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000; 
+            margin: 0;
+            padding: 20px;
+        }
+        .circle-container {
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%; 
+            overflow: hidden; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent; 
+            position: relative;
+            margin: 0 auto; 
+            animation: moveX 5s linear infinite; 
+        }
+        .circle-container img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+            background: transparent; 
+            position: relative;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+            animation: shine 2s infinite; 
+        }
+@keyframes moveX {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-10px);
+            }
+            50% {
+                transform: translateX(10px); 
+            }
+            75% {
+                transform: translateX(-10px);
+            }
+            100% {
+                transform: translateX(10px); 
+            }
+        }
+        h1 {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            background: linear-gradient(45deg, rgba(255,255,255,0.5), rgba(255,255,255,0.2)); 
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            animation: sparkle 1.5s infinite; 
+        }
+        .main-logo {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            overflow: hidden; 
+            display: inline-block;
+            background-color: #fff; 
+            margin-bottom: 20px; 
+        }
+
+        .main-logo img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px; 
+        }
+ .image-gallery a {
+            display: block;
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            overflow: hidden;
+        }
+
+        .image-gallery img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+        }
+    </style>
+</head>
+<body>
+    <div class="circle-container">
+        <img src="https://cdn.discordapp.com/attachments/1265612027897053194/1265807077301813329/Picsart_24-07-25_01-00-33-669.png?ex=66a2da34&is=66a188b4&hm=6d67fd68f9891b489d16ecd6efed0cd89968ad7be3579d002286c23749868281&" alt="Logo" id="logo">
+    </div>
+
+    <h1>Enzoupop21</h1>
+    <div class="image-gallery">
+        <a href="https://www.tiktok.com/@enzoupop?_t=8oIhdWbl3zt&_r=1" target="_blank">
+            <img src="https://img.pixers.pics/pho(s3:700/PI/54/88/85/48/90/700_PI5488854890_2a9626579bad4c3119e5a017afb2955c_5f9fed071fb4b_.,700,700,jpg)/stickers-logo-vectoriel-tiktok-noir-et-blanc.jpg.jpg" alt="TikTok">
+        </a>
+        <a href="https://youtube.com/@enzoupop35?si=Jb67pCmnhbfNXWtg" target="_blank">
+            <img src="https://www.presse-citron.net/app/uploads/2020/06/youtube-don-george-floyd.jpg" alt="YouTube">
+        </a>
+    </div>
+</body>
+</html>
